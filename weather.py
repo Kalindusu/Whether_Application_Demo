@@ -13,10 +13,10 @@ def get_current_weather(city=" Walasmulla City"):
      weather_data=requests.get(request_url).json()
      return weather_data
 
-if__name__ == "__main__": # type: ignore
-print('\n*** Get Current Weather Condition ***\n')
-city = input('\nEnter city name: ')
-weather_data = get_current_weather(city)
+if __name__ == "__main__":
+    print('\n*** Get Current Weather Condition ***\n')
+    city = input('\nEnter city name: ')
+    weather_data = get_current_weather(city)
 
-print('\n')
-pprint(weather_data)
+    print('\n')
+    pprint(weather_data)
